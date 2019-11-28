@@ -52336,6 +52336,40 @@ exports.InitialText = function (props) {
 
 /***/ }),
 
+/***/ "./src/components/Text/Text.tsx":
+/*!**************************************!*\
+  !*** ./src/components/Text/Text.tsx ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var handleClick = function handleClick() {
+  return alert("Testooo");
+};
+
+exports.Text = function (item) {
+  return React.createElement("div", {
+    className: "Div"
+  }, item);
+};
+
+exports.Button = function () {
+  return React.createElement(exports.Button, {
+    onClick: handleClick
+  });
+};
+
+/***/ }),
+
 /***/ "./src/index.tsx":
 /*!***********************!*\
   !*** ./src/index.tsx ***!
@@ -52360,10 +52394,18 @@ var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/in
 
 var InitialText_1 = __webpack_require__(/*! ./components/IitialText/InitialText */ "./src/components/IitialText/InitialText.tsx");
 
+var Text_1 = __webpack_require__(/*! ./components/Text/Text */ "./src/components/Text/Text.tsx");
+
 __webpack_require__(/*! ./styles/global.scss */ "./src/styles/global.scss");
 
 ReactDOM.render(React.createElement("div", null, React.createElement(InitialText_1.InitialText, {
   name: "Hello this is Webpack starter"
+}), React.createElement(Text_1.Text, {
+  item: "Item Text"
+}), React.createElement(Text_1.Button, {
+  onClick: function onClick() {
+    return alert("testi");
+  }
 })), document.getElementById("app"));
 
 /***/ }),
