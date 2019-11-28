@@ -19265,16 +19265,16 @@ module.exports = path;
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Banner/Banner.scss":
-/*!************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Banner/Banner.scss ***!
-  \************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/IitialText/InitialText.scss":
+/*!*********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/IitialText/InitialText.scss ***!
+  \*********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".banner {\n  background-color: moccasin;\n  box-sizing: border-box;\n  padding: 2rem;\n  text-align: center; }\n  .banner__text {\n    color: darkRed; }\n", ""]);
+exports.push([module.i, ".inititalText {\n  background-color: moccasin;\n  box-sizing: border-box;\n  padding: 2rem;\n  text-align: center; }\n  .inititalText__text {\n    color: darkRed; }\n", ""]);
 
 
 /***/ }),
@@ -52281,14 +52281,14 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./src/components/Banner/Banner.scss":
-/*!*******************************************!*\
-  !*** ./src/components/Banner/Banner.scss ***!
-  \*******************************************/
+/***/ "./src/components/IitialText/InitialText.scss":
+/*!****************************************************!*\
+  !*** ./src/components/IitialText/InitialText.scss ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./Banner.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Banner/Banner.scss");
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./InitialText.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/IitialText/InitialText.scss");
 
 if (typeof content === 'string') {
   content = [[module.i, content, '']];
@@ -52308,10 +52308,10 @@ if (content.locals) {
 
 /***/ }),
 
-/***/ "./src/components/Banner/Banner.tsx":
-/*!******************************************!*\
-  !*** ./src/components/Banner/Banner.tsx ***!
-  \******************************************/
+/***/ "./src/components/IitialText/InitialText.tsx":
+/*!***************************************************!*\
+  !*** ./src/components/IitialText/InitialText.tsx ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -52324,13 +52324,13 @@ Object.defineProperty(exports, "__esModule", {
 
 var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-__webpack_require__(/*! ./Banner.scss */ "./src/components/Banner/Banner.scss");
+__webpack_require__(/*! ./InitialText.scss */ "./src/components/IitialText/InitialText.scss");
 
 exports.InitialText = function (props) {
   return React.createElement("div", {
-    className: "banner"
+    className: "inititalText"
   }, React.createElement("span", {
-    className: "banner__text"
+    className: "inititalText_text"
   }, "Hello ", name, "!"));
 };
 
@@ -52358,11 +52358,11 @@ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 
-var Banner_1 = __webpack_require__(/*! ./components/Banner/Banner */ "./src/components/Banner/Banner.tsx");
+var InitialText_1 = __webpack_require__(/*! ./components/IitialText/InitialText */ "./src/components/IitialText/InitialText.tsx");
 
 __webpack_require__(/*! ./styles/global.scss */ "./src/styles/global.scss");
 
-ReactDOM.render(React.createElement("div", null, React.createElement(Banner_1.InitialText, {
+ReactDOM.render(React.createElement("div", null, React.createElement(InitialText_1.InitialText, {
   name: "Hello this is Webpack starter"
 })), document.getElementById("app"));
 
